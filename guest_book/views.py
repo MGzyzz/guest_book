@@ -1,11 +1,21 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Guest_book
-from .forms import GuestForms
+from .forms import GuestForms, SearchForm
 # Create your views here.
 
 def home(request):
+    form = SearchForm()
     guest = Guest_book.objects.filter(status='active').order_by('-time_of_creation')
-    return render(request, 'home.html', context={'guest': guest})
+
+    if request.method == 'POST':
+        form = SearchForm(request.POST)
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            guest = guest.filter(name=name)
+        return render(request, 'home.html', context={'guest': guest, 'form': form})
+    else:
+        return render(request, 'home.html', context={'guest': guest, 'form': form})
+
 
 
 def add_guest(request):
