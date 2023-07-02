@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <h1>Add Guest</h1>
+  {% include 'form/guest_form.html' with text_button='Add' %}
+
+{% endblock %}

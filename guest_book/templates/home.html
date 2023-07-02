@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+    <form method="post">
+    {% for gue in guest %}
+<div class="row">
+  <div class="col mb-3">
+    <div class="card text-dark" style="border-radius: 20px">
+      <div class="card-body">
+        <h5 class="card-title d-flex justify-content-between">{{ gue.name }} ({{ gue.email_author }})
+            <div>
+                <a href="{% url 'delete' id=gue.id %}" class="link-decoration"><i class="bi bi-file-earmark-minus" onclick="return confirmDelete()"></i></a>
+                <a href="{% url 'edit' id=gue.id %}" class="link-decoration"><i class="bi bi-pencil-square"></i></a>
+            </div>
+        </h5>
+        <p class="card-text">{{ gue.entry_text }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+    </form>
+
+{% endblock %}
