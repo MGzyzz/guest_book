@@ -1,0 +1,92 @@
+[
+{
+  "model": "guest_book.guest_book",
+  "pk": 1,
+  "fields": {
+    "name": "Check_one",
+    "email_author": "check_one@mail.ru",
+    "entry_text": "This is check_one",
+    "time_of_creation": "2023-07-02T06:00:57.367Z",
+    "edit_time": "2023-07-02T06:02:30.834Z",
+    "status": "active"
+  }
+},
+{
+  "model": "guest_book.guest_book",
+  "pk": 2,
+  "fields": {
+    "name": "Check_two",
+    "email_author": "check_two@mail.ru",
+    "entry_text": "This is check two",
+    "time_of_creation": "2023-07-02T06:03:50.909Z",
+    "edit_time": "2023-07-02T06:03:50.909Z",
+    "status": "active"
+  }
+},
+{
+  "model": "guest_book.guest_book",
+  "pk": 3,
+  "fields": {
+    "name": "Check_three",
+    "email_author": "check_three@mail.ru",
+    "entry_text": "This is check three",
+    "time_of_creation": "2023-07-02T06:04:21.788Z",
+    "edit_time": "2023-07-02T06:04:21.788Z",
+    "status": "active"
+  }
+},
+{
+  "model": "guest_book.guest_book",
+  "pk": 4,
+  "fields": {
+    "name": "Check_four",
+    "email_author": "check_four@mail.ru",
+    "entry_text": "This is check four",
+    "time_of_creation": "2023-07-02T06:04:46.659Z",
+    "edit_time": "2023-07-02T06:08:27.594Z",
+    "status": "active"
+  }
+},
+{
+  "model": "guest_book.guest_book",
+  "pk": 5,
+  "fields": {
+    "name": "Check_five",
+    "email_author": "check_five@mail.ru",
+    "entry_text": "This is check five",
+    "time_of_creation": "2023-07-02T06:05:09.414Z",
+    "edit_time": "2023-07-02T06:05:09.415Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "guest_book.guest_book",
+  "pk": 6,
+  "fields": {
+    "name": "Check_six",
+    "email_author": "check_six@mail.ru",
+    "entry_text": "This is check six",
+    "time_of_creation": "2023-07-02T06:05:42.738Z",
+    "edit_time": "2023-07-02T06:05:42.738Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$mpGivo8GTK6QDNFuf2zqCO$wluy2zNH4KCuxGHZYciwhCNOm9FlcrTnHQ0eXBjGsGQ=",
+    "last_login": "2023-07-02T06:00:07.757Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-07-02T05:59:43.220Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
